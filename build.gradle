@@ -35,8 +35,8 @@ sourceSets {
 eclipse {
   wtp {
     component {
-      //contextPath = 'rkweb'
-      resource deployPath: '/', sourcePath: '$webAppDirName'
+      //contextPath = $webAppDirName
+      resource deployPath: '/', sourcePath: $webAppDirName
       //resource deployPath: '/WEB-INF/classes', sourcePath: 'src/main/java'
     }
   }
